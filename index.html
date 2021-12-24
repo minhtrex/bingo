@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <title>BINGO GAME</title>
+  <link href="css/BingoStyle.css" rel="stylesheet" type="text/css">
+  <link href="css/3DButton.css" rel="stylesheet" type="text/css">
+  <link href="css/SegmentDisplay.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="main-header-padding-top">
+	  <header class="main-header">
+		<span class="logo-lg">
+		  <img src="img/rikkei_logo.png" class="img-logo-desk">
+		</span>
+	  </header>
+  </div>
+  <section class="container">
+	  <div class="after-header one">
+		  <div class="digit digZero" id="digitTens">
+			  <div class="segment segA"></div>
+			  <div class="segment segB"></div>
+			  <div class="segment segC"></div>
+			  <div class="segment segD"></div>
+			  <div class="segment segE"></div>
+			  <div class="segment segF"></div>
+			  <div class="segment segG"></div>
+		   </div>
+		   <div class="digit digOne" id="digitOnes">
+			  <div class="segment segA"></div>
+			  <div class="segment segB"></div>
+			  <div class="segment segC"></div>
+			  <div class="segment segD"></div>
+			  <div class="segment segE"></div>
+			  <div class="segment segF"></div>
+			  <div class="segment segG"></div>
+		   </div>
+	  </div>
+	  <div class="two" id="hitseq">
+	  </div>
+  </section>
+
+  <div class="button-group">
+	  <button class="button button1" id="btnRun">START</button>
+  </div>
+
+  <audio id="audioRun" src="audio/DRUM ROLL.mp3"></audio>
+  <audio id="audioStop" src="audio/DING.mp3"></audio>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/BingoGame.js"></script>
+</body>
+</html>
